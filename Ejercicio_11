@@ -1,0 +1,30 @@
+# 5. Realice un programa que pida un número del 1 al 12 y diga el nombre del mes correspondiente.
+
+mes = int(input("Ingrese el mes (considerando 1 es enero hasta 12 que es diciembre): "))
+
+if mes == 1:
+    print("Es enero.")
+elif mes == 2:
+    print("Es febrero.")
+elif mes == 3:
+    print("Es marzo.")
+elif mes == 4:
+    print("Es abril.")
+elif mes == 5:
+    print("Es mayo.")
+elif mes == 6:
+    print("Es junio.")
+elif mes == 7:
+    print("Es julio.")
+elif mes == 8:
+    print("Es agosto.")
+elif mes == 9:
+    print("Es septiembre.")
+elif mes == 10:
+    print("Es octubre.")
+elif mes == 11:
+    print("Es noviembre.")
+elif mes == 12:
+    print("Es diciembre.")
+else:
+    print("¡Error! Ingreso un número inexistente.")

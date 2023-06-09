@@ -1,0 +1,11 @@
+# 15. Leer 10 números y mostrar solamente los números positivos, y su sumatoria.
+
+sumatoria = 0
+
+for i in range(10):
+    num = int(input("Introduza un número: "))
+    if num > 0:
+        sumatoria += num
+
+if num > 0:
+    print("Los números positivos son: ", num , "y su sumatoria es de: " ,sumatoria)

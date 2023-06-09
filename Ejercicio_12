@@ -1,0 +1,18 @@
+# Ejercicios estructuras repetitivas y estructuras condicionales.
+# 12. Realice un programa que lea 4 números y diga cuántos son pares y cuantos impares y devuelva la sumatoria de los pares.
+
+num_pares = 0
+num_impares = 0
+total_pares = 0
+
+#Leer los 4 números: 
+for i in range(4):
+    num = int(input("Introduzca un número: "))
+    if num % 2 == 0:
+        num_pares += 1
+        total_pares += num
+    else:
+        num_impares += 1
+
+#Mostrar los resultados:
+print("La cantidad de numeros pares es: ", num_pares , "de impares es: ", num_impares , "la sumatoria de los pares es: " , total_pares)

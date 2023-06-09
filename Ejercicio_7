@@ -1,0 +1,13 @@
+# Ejercicios estructura condicional compuesto (IF anidados)
+# 7. Introducir los lados de un triángulo y visualizar por pantalla si dicho triángulo es equilátero, isósceles o escaleno.
+
+lado_a = int(input("Ingrese el valor del lado A: "))
+lado_b = int(input("Ingrese el valor del lado B: "))
+lado_c = int(input("Ingrese el valor del lado C: "))
+
+if lado_a == lado_b and lado_b == lado_c:
+    print("El triángulo es un triángulo equilatero.")
+elif lado_a != lado_b and lado_a != lado_c:
+    print("El triángulo es un triángulo escaleno.")
+else:
+    print("El triangulo es un triángulo isoceles.")

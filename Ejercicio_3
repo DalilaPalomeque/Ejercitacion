@@ -1,0 +1,11 @@
+# 3. Realizar un programa que permita ingresar “f” o “m” y determinar si vota en mesa femenina o masculina.
+
+mesa = input("Ingrese si es mujer (f) u hombre (m): ")
+
+if mesa == "m":
+    print("Vota en mesa masculina.")
+elif mesa == "f":
+    print("Vota en mesa femenina.")
+else:
+    print("¡Error! Ha ingresado una letra invalida, porfavor vuelva a ingresar.")
+    mesa = input("Ingrese si es mujer (f) u hombre (m): ")

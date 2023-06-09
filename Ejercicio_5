@@ -1,0 +1,23 @@
+# 5. Realice un programa que cambie pesos a dólares. 
+
+pesos = float(input("Ingrese la cantidad de pesos: "))
+
+dolares = pesos / 500
+
+print("La cantidad de dólares es: ", dolares)
+
+# Mejórelo, añadiendo el cambio de dólares a pesos y que sea el usuario quién decida qué tipo de cambio quiere, si de dólares a pesos o viceversa.
+
+cambio = float(input("Ingrese el cambio que desea, pesos(1) dolares(2): "))
+
+if cambio == 1:
+    pesos = float(input("Ingrese la cantidad de pesos: "))
+    dolares = pesos / 500
+    print("La cantidad de dolares es: ", dolares)
+elif cambio == 2:
+    dolares = float(input("Ingrese la cantidad de dólares: "))
+    pesos = dolares * 500
+    print("La cantidad de pesos es: ", pesos)
+else:
+    print("¡Error! Ingresó un opción incorrecta. Por favor vuelva a ingresar.")
+    cambio = float(input("Ingrese el cambio que desea, pesos (1) dólares (2)"))

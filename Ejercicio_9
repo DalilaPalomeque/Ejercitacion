@@ -1,0 +1,24 @@
+# 9. Realice un programa que lea tres números, muestre cuál es el mayor y determine si es par o impar.
+
+a = int(input("Ingrese el número: "))
+b = int(input("Ingrese el número: "))
+c = int(input("Ingrese el número: "))
+
+if a > b and a > c:
+    print("El mayor es: ", a)
+    if a % 2 == 0:
+        print("Es par.")
+    else:
+        print("Es impar.")
+elif b > a and b > c:
+    print("El mayor es: ", b)
+    if b % 2 == 0:
+        print("Es par.")
+    else:
+        print("Es impar.")
+else:
+    print("El mayor es: ", c)
+    if c % 2 == 0:
+        print("Es par.")
+    else:
+        print("Es impar.")

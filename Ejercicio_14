@@ -1,0 +1,23 @@
+# 14. Ingresar las edades y el sexo de 15 personas y determinar cuántas son mujeres, cuántos varones, cuántos mayores de edad y cuántos menores de edad.
+
+mujeres = 0
+varones = 0
+mayores_de_edad = 0
+menores_de_edad = 0
+
+for i in range(15):
+    edad = int(input("Ingrese su edad: "))
+    sexo = int(input("Ingrese su sexo (1 para mujer, 2 para varon): "))
+
+    if sexo == 1:
+        mujeres += 1
+    elif sexo == 2:
+        varones += 1
+
+    if edad >= 18:
+        mayores_de_edad += 1
+    else:
+        menores_de_edad += 1
+
+print("La cantidad de mujeres es: ", mujeres, "y de hombres: ", varones)
+print("La cantidad de mayores de edad es de: ", mayores_de_edad, "y de menores: ", menores_de_edad)
